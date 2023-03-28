@@ -67,7 +67,7 @@ const comics = async () => {
         const name = $('.title-detail').text().trim();
         let author = $('.author p.col-xs-8').text().trim();
         if (author == "Đang Cập Nhật") author = null
-        const sumary = $('p.shortened').text().trim()
+        const summary = $('p.shortened').text().trim()
         let status = $('.status p.col-xs-8').text().trim()
         let other_name = $('.other-name p.col-xs-8').text().trim()
         if (status == "Đang Cập Nhật") status = 'updating'
@@ -86,7 +86,7 @@ const comics = async () => {
             other_name,
             author,
             status,
-            sumary,
+            summary,
             image: imageName,
         }
 
